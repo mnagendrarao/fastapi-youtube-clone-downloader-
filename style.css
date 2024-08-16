@@ -1,0 +1,128 @@
+/* General Reset and Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f5f7f9, #c3cfe2); /* Subtle gradient background */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    align-items: center;
+    background: #34495e; /* Darker shade for the navbar */
+    color: #ecf0f1;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.logo {
+    height: 70px; /* Slightly increased height */
+    width: auto;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for colors */
+}
+
+ul li a:hover {
+    background: #1abc9c; /* Gradient hover background */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Form and Result Styling */
+form {
+    max-width: 900px; /* Wider form for better layout */
+    margin: 100px auto 20px; /* Adjusted top margin for fixed navbar */
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    border: 1px solid #e1e1e1; /* Subtle border around the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+input[type="text"],
+select,
+button {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #1abc9c; /* Focus border color */
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient background for button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60); /* Darker gradient on hover */
+    transform: scale(1.05);
+}
+
+#result {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

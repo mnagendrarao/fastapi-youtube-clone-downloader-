@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="/static/logo.png" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <h1>Nag Video Downloader</h1>
+        </ul>
+    </nav>
+    
+    <h1>Video Downloader</h1>
+    <form id="downloadForm">
+        <label for="link">Video Link:</label>
+        <input type="text" id="link" name="link" required>
+        
+        <label for="quality">Quality:</label>
+        <select id="quality" name="quality" required>
+            <option value="360">360p</option>
+            <option value="480">480p</option>
+            <option value="720">720p</option>
+            <option value="1080">1080p</option>
+        </select>
+        
+        <button type="submit">Download</button>
+    </form>
+    
+    <div id="result"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
